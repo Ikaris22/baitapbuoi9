@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:baitapbuoi_9_1/listStudent.dart';
 
 class DetailStudent extends StatelessWidget {
   final int index;
-
-  const DetailStudent({super.key, required this.index});
+  final List student;
+  const DetailStudent({super.key, required this.index,required this.student});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
