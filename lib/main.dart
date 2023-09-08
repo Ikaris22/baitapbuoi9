@@ -52,7 +52,7 @@ class ListStudent extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => DetailStudent(index: index,student: student,)));
+                        builder: (context) => DetailStudent(st: student[index],)));
               },
               child: Container(
                 margin: const EdgeInsets.only(left: 25, top: 40, right: 25),

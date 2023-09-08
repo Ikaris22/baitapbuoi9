@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
+import 'package:baitapbuoi_9_1/main.dart';
 class DetailStudent extends StatelessWidget {
-  final int index;
-  final List student;
-  const DetailStudent({super.key, required this.index,required this.student});
+
+  final Students st;
+  const DetailStudent({super.key,required this.st});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class DetailStudent extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Text('Tên: ${student[index].name}\nTuổi: ${student[index].age}',
+              Text('Tên: ${st.name}\nTuổi: ${st.age}',
                   style: const TextStyle(fontSize: 22)),
             ],
           ),
